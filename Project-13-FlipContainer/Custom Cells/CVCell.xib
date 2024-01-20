@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CVCell" id="gTV-IL-0wX" customClass="CVCell" customModule="Project_13_FlipContainer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQg-LK-cPA">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GDz-he-grQ">
+                                <rect key="frame" x="0.0" y="1" width="300" height="158.66666666666666"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collection View Cell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZo-OS-hWB">
+                                <rect key="frame" x="15" y="160" width="270" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GDz-he-grQ" secondAttribute="trailing" id="7Ug-Ex-WWp"/>
+                            <constraint firstItem="GDz-he-grQ" firstAttribute="top" secondItem="nQg-LK-cPA" secondAttribute="top" id="CzX-8V-bbb"/>
+                            <constraint firstItem="GDz-he-grQ" firstAttribute="leading" secondItem="nQg-LK-cPA" secondAttribute="leading" id="RXv-XF-CyC"/>
+                            <constraint firstItem="JZo-OS-hWB" firstAttribute="height" secondItem="nQg-LK-cPA" secondAttribute="height" multiplier="0.2" id="VVR-Mf-Lk2"/>
+                            <constraint firstItem="GDz-he-grQ" firstAttribute="height" secondItem="nQg-LK-cPA" secondAttribute="height" multiplier="0.8" id="YjM-am-EvW"/>
+                            <constraint firstItem="JZo-OS-hWB" firstAttribute="top" secondItem="GDz-he-grQ" secondAttribute="bottom" id="b0D-If-nuW"/>
+                            <constraint firstItem="JZo-OS-hWB" firstAttribute="trailing" secondItem="GDz-he-grQ" secondAttribute="trailing" constant="-15" id="n8c-KJ-e5S"/>
+                            <constraint firstItem="JZo-OS-hWB" firstAttribute="leading" secondItem="GDz-he-grQ" secondAttribute="leading" constant="15" id="rmJ-E0-0d1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="nQg-LK-cPA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6Dr-tX-K15"/>
+                <constraint firstAttribute="trailing" secondItem="nQg-LK-cPA" secondAttribute="trailing" id="WbD-FV-VYQ"/>
+                <constraint firstItem="nQg-LK-cPA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cic-ej-wFs"/>
+                <constraint firstAttribute="bottom" secondItem="nQg-LK-cPA" secondAttribute="bottom" id="qYL-M3-OEt"/>
+            </constraints>
+            <connections>
+                <outlet property="imgCVCell" destination="GDz-he-grQ" id="aE5-uf-aQs"/>
+                <outlet property="lblCvCell" destination="JZo-OS-hWB" id="tFB-Z3-69r"/>
+            </connections>
+            <point key="canvasLocation" x="235" y="29"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="flag.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
